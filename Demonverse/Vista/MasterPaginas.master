@@ -1,0 +1,135 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="~/controlador/MasterPaginas.master.cs" Inherits="Vista_MasterInicio" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        
+       
+ 
+        .auto-style2 {
+            width: 875px;
+            height: 378px;
+        }
+        .auto-style4 {
+            height: 116px;
+        }
+       
+ 
+        .auto-style5 {
+            width: 559px;
+            height: 3px;
+        }
+       
+ 
+        .auto-style1 {
+            margin-left: 83px;
+        }
+        .auto-style7 {
+            width: 100%;
+            height: 100%;
+            background-image: url('../Imagenes/fondo.jpg');
+            background-size: contain;
+            justify-content: center;
+            display: block;
+            background-position: center;
+            background-attachment: fixed;
+            margin-bottom: 0px;
+        }
+       
+ 
+        .auto-style8 {
+            height: 3px;
+        }
+        .auto-style9 {
+            width: 717px;
+            height: 138px;
+        }
+       
+ 
+        .auto-style10 {
+            height: 116px;
+            width: 982px;
+        }
+        .auto-style11 {
+            width: 126px;
+            height: 3px;
+        }
+       
+ 
+    </style>
+</head>
+<body >
+    <form id="form1" runat="server">
+    <div>
+    </div>
+        <table class="auto-style7" aria-checked="false" dir="auto">
+            <tr>
+                <td class="auto-style10" colspan="2">
+                    
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <img class="auto-style9" src="../imagenes/generatedtext.png" /></td>
+                <td class="auto-style4">
+                    
+                    <asp:Menu ID="Menu1" runat="server" DynamicHorizontalOffset="2" Font-Bold="True" Font-Italic="True" Font-Names="Verdana" Font-Size="Large" ForeColor="#666666" RenderingMode="List" StaticSubMenuIndent="10px" Width="20%"  BorderStyle="None" Height="50%">
+                        <DynamicHoverStyle ForeColor="White" />
+                        <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                        <Items>
+                            <asp:MenuItem ImageUrl="~/imagenes/Menu/menu.png">
+                                <asp:MenuItem ImageUrl="~/imagenes/Menu/inicio.png" NavigateUrl="~/Vista/Inicio.aspx"></asp:MenuItem>
+                                <asp:MenuItem ImageUrl="~/imagenes/Menu/registro (2).png" NavigateUrl="~/Vista/Registro.aspx"></asp:MenuItem>
+                                <asp:MenuItem ImageUrl="~/imagenes/Menu/login.png" NavigateUrl="~/Vista/Login.aspx"></asp:MenuItem>
+                                <asp:MenuItem ImageUrl="~/imagenes/Menu/Libros.png" NavigateUrl="~/Vista/Libros.aspx"></asp:MenuItem>
+                                <asp:MenuItem ImageUrl="~/imagenes/Menu/contacto.png" NavigateUrl="~/Vista/Contacto.aspx"></asp:MenuItem>
+                                <asp:MenuItem ImageUrl="~/imagenes/Menu/tutorial.png" NavigateUrl="~/Vista/Tutorial.aspx"></asp:MenuItem>
+                            </asp:MenuItem>
+                        </Items>
+                        <StaticHoverStyle/>
+                        <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                    </asp:Menu>
+                </td>
+            </tr>
+            <tr>
+                
+                <td class="auto-style11">
+                    &nbsp;&nbsp;
+                    </td>
+                
+                <td class="auto-style5">
+                    <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+                    </td>
+                
+                <td class="auto-style8">
+                    <asp:ImageButton ID="btnDenuncia" runat="server" BackColor="Red" BorderStyle="Solid" BorderWidth="5px" Height="36px" ImageUrl="~/imagenes/MasterPagina/denun.png" OnClick="ImageButton1_Click1" Width="34px" CssClass="auto-style1" />
+                </td>
+            </tr>
+
+            <tr>
+                <td class="auto-style2" colspan="3">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <br />
+                    <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                    <asp:TextBox ID="TextBox1" runat="server" Height="127px" Width="349px" BackColor="Black" BorderColor="White" BorderStyle="Double" ForeColor="White">
+
+             
+                    </asp:TextBox>
+        
+                    <asp:Button ID="comentar" runat="server" OnClick="Button1_Click" Text="Comenta!" />
+                    <br />
+                    <br />
+&nbsp;&nbsp;<br />
+                    <br />
+                </td>
+            </tr>
+            </table>
+    </form>
+</body>
+</html>

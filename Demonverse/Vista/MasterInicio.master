@@ -1,0 +1,119 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="~/Controlador/MasterInicio.master.cs" Inherits="Vista_Master1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+
+        .auto-style1 {
+            width: 100%;
+            height: 679px;
+            background-image: url('../Imagenes/fondo.jpg');
+            background-size: contain;
+            justify-content: center;
+            display:block;
+            background-position:center;
+            background-attachment: fixed;
+            
+        } 
+         
+        .auto-style9 {
+            height: 12px;
+        }
+ 
+        .auto-style10 {
+            width: 810px;
+            height: 24px;
+        }
+        .auto-style11 {
+            width: 41px;
+            height: 12px;
+        }
+        .auto-style12 {
+            width: 712px;
+            height: 12px;
+        }
+        .auto-style14 {
+            height: 24px;
+        }
+        .auto-style15 {
+            text-transform: uppercase;
+            font-variant: small-caps;
+            text-decoration: overline underline blink;
+            color: #663300;
+        }
+        .auto-style16 {
+            text-transform: uppercase;
+            font-variant: small-caps;
+            text-decoration: overline underline blink;
+            color: #663300;
+            font-size: large;
+        }
+ 
+    </style>
+</head>
+<body style="height: 100%">
+    <form id="form1" runat="server">
+    <div>
+    </div>
+        <table class="auto-style1" >
+            <tr>
+                <td class="auto-style10" colspan="2">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <img class="auto-style5" src="../imagenes/generatedtext.png" /></td>
+                <td class="auto-style14">
+                    <asp:Menu ID="Menu1" runat="server" DynamicHorizontalOffset="2" Font-Bold="True" Font-Italic="True" Font-Names="Verdana" Font-Size="Large" ForeColor="#666666" RenderingMode="List" StaticSubMenuIndent="10px" Width="20%"  BorderStyle="None" Height="50%">
+                        <DynamicHoverStyle ForeColor="White" />
+                        <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                        <Items>
+                            <asp:MenuItem ImageUrl="~/imagenes/Menu/menu.png">
+                                <asp:MenuItem ImageUrl="~/imagenes/Menu/inicio.png" NavigateUrl="~/Vista/Inicio.aspx"></asp:MenuItem>
+                                <asp:MenuItem ImageUrl="~/imagenes/Menu/registro (2).png" NavigateUrl="~/Vista/Registro.aspx"></asp:MenuItem>
+                                <asp:MenuItem ImageUrl="~/imagenes/Menu/login.png" NavigateUrl="~/Vista/Login.aspx"></asp:MenuItem>
+                                <asp:MenuItem ImageUrl="~/imagenes/Menu/Libros.png" NavigateUrl="~/Vista/Libros.aspx"></asp:MenuItem>
+                                <asp:MenuItem ImageUrl="~/imagenes/Menu/contacto.png" NavigateUrl="~/Vista/Contacto.aspx"></asp:MenuItem>
+                                <asp:MenuItem ImageUrl="~/imagenes/Menu/tutorial.png" NavigateUrl="~/Vista/Tutorial.aspx"></asp:MenuItem>
+                                <asp:MenuItem></asp:MenuItem>
+                            </asp:MenuItem>
+                        </Items>
+                        <StaticHoverStyle/>
+                        <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                    </asp:Menu>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style11">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td class="auto-style12">
+                    <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+                </td>
+                <td class="auto-style9">
+              
+                    <strong>
+                    <samp>
+                    <dfn><cite>
+                    <var>
+                    <kbd><code><br class="auto-style15" />
+                    </code></kbd>
+                    </var>
+                    </cite></dfn>
+                    </samp>
+                    </strong>
+              
+                    </td>
+            </tr>
+            <tr>
+                <td class="auto-style2" colspan="2" >
+                    &nbsp;</td>
+            </tr>
+            </table>
+    </form>
+</body>
+</html>
